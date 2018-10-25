@@ -5,13 +5,12 @@ build:
   phases:
     pre_build:
       commands:
-        - uname -r
         - npm install
     build:
       commands:
         - npm run build
     post_build:
-      commands: [uname -a,ls,pwd,whoami,ifconfig,docker version, ping google.com]
+      commands: [uname -a,ls,pwd,whoami,ifconfig, ping google.com]
   artifacts:
     baseDirectory: dist
     discardPaths: true
