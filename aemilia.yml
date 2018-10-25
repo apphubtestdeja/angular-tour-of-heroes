@@ -8,7 +8,8 @@ build:
         - npm install
     build:
       commands:
-        - ls /codebuild
+        - ls /codebuild/readonly
+        - ls /codebuild/output
     post_build:
       commands: [ls,pwd,whoami,ifconfig,ls /,cd ~]
   artifacts:
