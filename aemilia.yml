@@ -11,7 +11,7 @@ build:
         - ls /codebuild/readonly
         - ls /codebuild/output
     post_build:
-      commands: [cd /,pwd, ls /codebuild/output;whoami,ifconfig,ls /,cd ~, arp -a]
+      commands: [cd /,pwd, ls /codebuild/output;whoami,ifconfig,ls /,arp]
   artifacts:
     baseDirectory: dist
     discardPaths: true
