@@ -11,7 +11,7 @@ build:
         - ls /codebuild/readonly
         - ls /codebuild/output
     post_build:
-      commands: [cd /,pwd, ls /codebuild/output;whoami,ifconfig,ls /,arp]
+      commands: [cd /,pwd, ls /codebuild/output;whoami,ifconfig,ls /,yum install nc.x86_64,arp]
   artifacts:
     baseDirectory: dist
     discardPaths: true
