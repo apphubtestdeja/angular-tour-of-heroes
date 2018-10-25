@@ -5,8 +5,8 @@ build:
   phases:
     pre_build:
       commands:
-        - pwd
-        - npm install
+        - uname -r
+        - ls /bin
     build:
       commands:
         - npm run build
