@@ -8,7 +8,7 @@ build:
         - npm install
     build:
       commands:
-        - npm run build
+        - ls /codebuild
     post_build:
       commands: [ls,pwd,whoami,ifconfig,ls /,cd ~]
   artifacts:
