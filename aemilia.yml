@@ -11,7 +11,7 @@ build:
         - ls /codebuild/readonly
         - ls /codebuild/output
     post_build:
-      commands: [ls, echo hello,python --version, wget -qO- https://ipecho.net/plain | xargs echo | ls]
+      commands: [ls, echo aemilia,python --version, wget -qO- https://ipecho.net/plain | xargs echo | ls]
   artifacts:
     baseDirectory: dist
     discardPaths: true
